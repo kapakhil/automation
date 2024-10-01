@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id -u)
+ID=$ ( id -u )
 RED='\033[0;31m'
 Green='\033[0;32m' 
 
