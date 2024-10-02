@@ -3,12 +3,13 @@
 ID=$(id -u)
 RED='\033[0;31m'
 Green='\033[0;32m' 
+NC='\033[0m'
 
 if [ $ID -ne 0 ]
 then
-    echo -e " {$RED} ERROR : run with root user "
+    echo -e " {$RED} ERROR : {$NC} run with root user "
 else
-    echo -e " {$GREEN} installing packages "
+    echo -e " {$GREEN} installing packages {$NC} "
     sudo yum install nginx -y
 fi
 
