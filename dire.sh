@@ -13,13 +13,13 @@ else
     echo " $Green Executing below commands $Nc "
 fi
 
-mkdir shell ansible docker
+# mkdir shell ansible docker
 
-touch bash 
+# touch bash 
 
-cp bash shell
+# cp bash shell
 
-mv ansible docker 
+# mv ansible docker 
 
 ls -l
 
