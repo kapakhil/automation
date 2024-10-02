@@ -10,6 +10,7 @@ Id=$(id -u)
 if [ $Id -ne 0 ]
 then
     echo -e " $Red Eroor :$NC $Yellow Sudo user tho run chey broo $NC "
+    exit 1
 else 
     echo -e " $Green Installing required packages $NC "
 fi 
