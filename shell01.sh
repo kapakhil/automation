@@ -14,4 +14,4 @@ else
     echo " $Green Installing required packages $NC "
 fi 
 
-sudo yum install ansible -y
+# sudo yum install ansible -y
