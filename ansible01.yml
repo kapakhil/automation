@@ -9,7 +9,7 @@
         
     - name: install httd
       ansible.builtin.package:
-        name: tomcat
+        name: tomcat9
         state: latest
 
   # - name: Install packages
