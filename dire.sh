@@ -6,7 +6,7 @@ Green='\e[32m'
 Nc='\e[0m'
 
 Id=$(id -u)
-if [ $Id -ne 0]
+if [ $Id -ne 0 ]
 then
     echo -e " $Red ERROR $Nc : $Yellow please run with root user $Nc "
 else 
