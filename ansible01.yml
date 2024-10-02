@@ -1,0 +1,14 @@
+- name: install packages 
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: install nginx
+      ansible.buitin.package:
+        name: nginx
+        state: latest
+    - name: install httd
+      ansible.builtin.package:
+        name: tomcat
+        state: latest
+
+     
