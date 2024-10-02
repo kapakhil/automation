@@ -9,7 +9,7 @@ if [ $ID -ne 0 ]
 then
     echo -e " $RED ERROR : $NC run with root user "
 else
-    echo -e " {$GREEN} installing packages {$NC} "
+    echo -e " $GREEN installing packages $NC "
     sudo yum install nginx -y
 fi
 
