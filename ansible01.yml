@@ -3,12 +3,28 @@
   become: yes
   tasks:
     - name: install nginx
-      ansible.buitin.package:
+      ansible.builtin.package:
         name: nginx
         state: latest
+        
     - name: install httd
       ansible.builtin.package:
         name: tomcat
         state: latest
+
+  # - name: Install packages
+  #   hosts: all
+  #   become: yes
+  #   tasks:
+  #     - name: Install Nginx
+  #       ansible.builtin.package:
+  #         name: nginx
+  #         state: latest
+
+  #     - name: Install Tomcat
+  #       ansible.builtin.package:
+  #         name: tomcat
+  #         state: latest
+
 
      
