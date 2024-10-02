@@ -1,8 +1,17 @@
 #!/bin/bash
 
-NUMBER1=1
-NUMBER2=3
+Red='\e[31m'
+Green='\e[32m'
+Yellow='\e[33m'
+NC='\e[0m'
 
-echo " $NUMBER1+$NUMBER2"
+Id = $(id -u)
+if [ $Id -ne 0 ]
+then
+    echo " $Red Eroor :$NC $Yellow Sudo user tho run chey broo $NC "
+else 
+    echo " $Green Installing required packages $NC "
+fi 
 
-echo $(($NUMBER1 + $NUMBER2))
+
+sudo yum install ansible -y
